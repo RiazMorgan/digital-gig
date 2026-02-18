@@ -21,9 +21,17 @@ contactForm.addEventListener("submit", async (e) => {
     const json = await response.json();
 
     if (json.success) {
-      statusMessage.textContent = "Message sent successfully.";
+      statusMessage.textContent = "Message sent successfully. Redirecting...";
       statusMessage.className = "message success";
       contactForm.reset();
+
+      // Check if the form has a redirect instruction
+      const redirectUrl = contactForm.getAttribute("data-redirect");
+      if (redirectUrl) {
+        setTimeout(() => {
+          window.location.href = redirectUrl;
+        }, 2000); // Wait 2 seconds before redirecting
+      }
     } else {
       statusMessage.textContent = "Failed to send message. Try again.";
       statusMessage.className = "message error";

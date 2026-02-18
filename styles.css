@@ -38,6 +38,7 @@ body {
 
 li {
   list-style-type: none;
+  font-size: 1rem;
 }
 
 a {
@@ -101,6 +102,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Buttons */
@@ -444,8 +447,8 @@ nav li {
   max-width: 1200px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  /* gap: rem; */
 }
 
 .hero-content {
@@ -463,6 +466,13 @@ nav li {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.hero-image-container {
+  text-align: right;
+  max-width: 700px;
+}
+.hero-image {
+  height: auto;
 }
 
 /* ============================================
@@ -1763,7 +1773,7 @@ a.method-value:hover {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
-  color: #ffffff;
+  color: #0c0c0f;
   font-size: 0.875rem;
   transition: all 0.3s ease;
 }
@@ -2035,6 +2045,10 @@ a.method-value:hover {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 375Ã—667 (iPhone 7/8/SE) */
@@ -2047,6 +2061,10 @@ a.method-value:hover {
   }
   nav ul {
     gap: 1rem;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2061,6 +2079,10 @@ a.method-value:hover {
   .button {
     padding: 0.5rem 0.8rem;
     font-size: 0.85rem;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2118,6 +2140,11 @@ a.method-value:hover {
   .about-body {
     font-size: 1rem;
   }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2170,6 +2197,10 @@ a.method-value:hover {
   .cta-secondary {
     padding: 0.75rem 1.5rem;
   }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2195,6 +2226,10 @@ a.method-value:hover {
   .stat-label {
     font-size: 0.75rem;
   }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2216,6 +2251,10 @@ a.method-value:hover {
   .portfolio-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2268,6 +2307,11 @@ a.method-value:hover {
   .cta-text {
     font-size: 1.125rem;
   }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2289,6 +2333,11 @@ a.method-value:hover {
   .cta-button {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2315,6 +2364,11 @@ a.method-value:hover {
 
   .contact-subheadline {
     font-size: 1.0625rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2373,6 +2427,11 @@ a.method-value:hover {
   .form-textarea {
     padding: 0.75rem 0.875rem;
     font-size: 0.875rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2481,6 +2540,10 @@ a.method-value:hover {
     width: 2.8125rem;
     height: 2.8125rem;
   }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2501,6 +2564,10 @@ a.method-value:hover {
 
   .footer-legal a {
     font-size: 0.75rem;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2529,6 +2596,11 @@ a.method-value:hover {
 
   .hero-trust {
     gap: 1.5rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2592,6 +2664,11 @@ a.method-value:hover {
   .scroll-text {
     font-size: 0.75rem;
   }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ============================================
@@ -2614,6 +2691,11 @@ a.method-value:hover {
 
   .trust-item {
     font-size: 0.875rem;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
