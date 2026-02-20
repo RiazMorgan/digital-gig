@@ -449,6 +449,7 @@ nav li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* gap: rem; */
+  column-gap: clamp(3rem, 8vw, 7rem);
 }
 
 .hero-content {
@@ -468,11 +469,11 @@ nav li {
   }
 }
 .hero-image-container {
-  text-align: right;
-  max-width: 700px;
-}
-.hero-image {
   height: auto;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 /* ============================================
