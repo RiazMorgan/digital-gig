@@ -2,7 +2,8 @@ const contactForm = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
 const statusMessage = document.getElementById("statusMessage");
 
-contactForm.addEventListener("submit", async (e) => {
+if (contactForm && submitBtn && statusMessage) {
+  contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = new FormData(contactForm);
@@ -46,3 +47,4 @@ contactForm.addEventListener("submit", async (e) => {
     setTimeout(() => (statusMessage.style.display = "none"), 7000);
   }
 });
+}
