@@ -2574,6 +2574,17 @@ a.method-value:hover {
   .hero-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .hero-content {
+    grid-column: 1;
+    order: 1;
+  }
+
+  .hero-image-container {
+    grid-column: 1;
+    order: 2;
   }
 }
 
