@@ -3520,3 +3520,48 @@ textarea {
     font-size: 1.6rem;
   }
 }
+
+/* Footer readability refinements */
+.footer-section {
+  background: linear-gradient(145deg, #11161f 0%, #1a2432 55%, #223247 100%);
+}
+
+.footer-eyebrow {
+  margin: 0 0 0.45rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8fc9f2;
+  font-weight: 700;
+}
+
+.footer-tagline {
+  color: #d4dde8;
+  max-width: 32ch;
+}
+
+.footer-contact-link {
+  color: #e7edf5;
+}
+
+.footer-list a {
+  color: #d1dae5;
+}
+
+.newsletter-text {
+  color: #c7d2df;
+}
+
+.newsletter-input {
+  color: #f3f8ff;
+  background: rgba(12, 18, 27, 0.45);
+  border-color: rgba(186, 208, 229, 0.35);
+}
+
+.newsletter-input::placeholder {
+  color: #b2c0cf;
+}
+
+.footer-bottom-wrap .footer-bottom {
+  background: rgba(7, 11, 16, 0.46);
+}
