@@ -1,0 +1,7 @@
+{
+  "name": "digital-gig",
+  "private": true,
+  "scripts": {
+    "build:css": "python scripts/build_css.py"
+  }
+}
