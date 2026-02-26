@@ -64,7 +64,7 @@
       window.ml('account', '1930092');
 
       window.fbq = window.fbq || function () {
-        (window.fbq.q = window.fbq.q || []).push(arguments);
+        (window.fbq.queue = window.fbq.queue || []).push(arguments);
       };
       if (!window._fbq) {
         window._fbq = window.fbq;
@@ -72,7 +72,8 @@
       window.fbq.push = window.fbq;
       window.fbq.loaded = true;
       window.fbq.version = '2.0';
-      window.fbq.q = window.fbq.q || [];
+      window.fbq.queue = window.fbq.queue || [];
+      window.fbq.q = window.fbq.queue;
       loadScript('https://connect.facebook.net/en_US/fbevents.js');
       window.fbq('init', '442815601559095');
       window.fbq('track', 'PageView');
