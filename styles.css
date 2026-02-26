@@ -447,8 +447,8 @@ nav li {
   max-width: 1200px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* gap: rem; */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
   column-gap: clamp(3rem, 8vw, 7rem);
 }
 
@@ -470,10 +470,20 @@ nav li {
 }
 .hero-image-container {
   height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image {
   width: 100%;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
 }
 
 /* ============================================
