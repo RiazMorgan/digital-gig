@@ -9,6 +9,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-XQVRGX1W45');
+  gtag('config', 'G-37WV5VKE7L');
 </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,89 +17,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Overpass:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-critical.min.css?v=b36b49676b" />
+    <link rel="preload" href="styles.min.css?v=acaa6c3669" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="styles.min.css?v=acaa6c3669" /></noscript>
     <script defer src="main.js"></script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MN32KVMF');</script>
-<!-- End Google Tag Manager -->
-<!-- MailerLite Universal -->
+<!-- Deferred third-party marketing loaders -->
 <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1930092');
-</script>
-<!-- End MailerLite Universal -->
- <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '442815601559095');
-fbq('track', 'PageView');
+  (function () {
+    let loaded = false;
+
+    function loadScript(src) {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = src;
+      document.head.appendChild(script);
+      return script;
+    }
+
+    function bootstrapMarketingTags() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ml = window.ml || function () {
+        (window.ml.q = window.ml.q || []).push(arguments);
+      };
+      loadScript('https://assets.mailerlite.com/js/universal.js');
+      window.ml('account', '1930092');
+
+      window.fbq = window.fbq || function () {
+        (window.fbq.q = window.fbq.q || []).push(arguments);
+      };
+      if (!window._fbq) {
+        window._fbq = window.fbq;
+      }
+      window.fbq.push = window.fbq;
+      window.fbq.loaded = true;
+      window.fbq.version = '2.0';
+      window.fbq.q = window.fbq.q || [];
+      loadScript('https://connect.facebook.net/en_US/fbevents.js');
+      window.fbq('init', '442815601559095');
+      window.fbq('track', 'PageView');
+    }
+
+    function scheduleLoad() {
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(bootstrapMarketingTags, { timeout: 2000 });
+      } else {
+        window.setTimeout(bootstrapMarketingTags, 1500);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', scheduleLoad, { once: true });
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (eventName) {
+      window.addEventListener(eventName, bootstrapMarketingTags, { once: true, passive: true });
+    });
+  })();
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
   </head>
   <body>
     <!-- Header & Navigation -->
-     <header class="header">
+    <header class="header">
 
         <div class="container">
             <div class="header-content">
                 <!-- Logo -->
-                <a href="#home" class="logo">
-  <span class="logo-text">DIGITAL</span>
-  <span class="logo-highlight">GIG</span>
-</a>
+                  <a href="#home" class="logo" aria-label="Digital Gig home">
+                  <span class="logo-mark">DG</span>
+                  <span class="logo-copy">
+                    <span class="logo-text">Digital</span>
+                    <span class="logo-highlight">Gig</span>
+                  </span>
+                </a>
+
                 <!-- Navigation -->
-                <nav class="nav" id="navMenu">
+              <nav class="nav" id="navMenu" aria-label="Primary navigation">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
-                        <li class="nav-item"><a href="#features" class="nav-link">FEATURES</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                         <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
 
                 <!-- CTA Button -->
                 <div class="header-cta">
-                    <a href="#contact" class="btn-primary">Get Your Free Quote →</a>
+                    <a href="#contact" class="btn-primary">Book a free strategy call</a>
                 </div>
 
                 <!-- Mobile Menu Toggle -->
@@ -112,75 +123,74 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
-  
+<section class="hero-section" id="home">
+        
   <!-- Background Image with Overlay -->
-  <div class="hero-background">
-    <div class="hero-overlay"></div>
-  </div> 
-  
-  <!-- Hero Content Container -->
-  <div class="hero-container">
-    <!-- Main Image -->
-    <!-- <div class="hero-image-container">
-        <div class "hero-image">
-          <img src="pictures/Untitled design (2).png" alt="Hero Image">
-        </div> -->
-    <!-- Main Content -->
-    <div class="hero-content">
-      
-      
-      
-      <!-- Main Headline -->
-      <h1 class="hero-headline">
-        Building Websites That <span class="highlight">Win Clients</span> & Build <span class="highlight">Trust</span>
-      </h1>
-      
-      <!-- Subheadline (Shorter & Punchier) -->
-      <p class="hero-subheadline">
-        Professional, SEO-friendly websites for <strong>law firms, medical practices, accountants, and small businesses</strong> who want to attract more clients and grow revenue.
-      </p>
-      
-      <!-- CTA Buttons -->
-      <div class="hero-cta">
-        <a href="#contact" class="cta-primary">
-          <span>Build My Website</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="#services" class="cta-primary">
-          <span>See Our Services</span>
-        </a>
-      </div>
-      
-      <!-- Trust Indicators -->
-      <div class="hero-trust">
-        <div class="trust-item">
-          <div class="trust-icon">✓</div>
-          <span>Customer Focused</span>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">✓</div>
-          <span>Fast Delivery</span>
-        </div>
-        <div class="trust-item">
-          <div class="trust-icon">✓</div>
-          <span>No Hidden Costs</span>
+    <div class="hero-background">
+        <div class="hero-overlay"></div>
+    </div>
+       <!-- Hero Content Container -->
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">★</span>
+            <span class="badge-text">Professional websites for local businesses</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Build a website that <span class="highlight">earns trust</span> and turns visitors into clients.
+          </h1>
+
+          <p class="hero-subheadline">
+            We design and develop clean, conversion-focused websites for <strong>law firms, medical practices, accountants, and growing small businesses</strong> that want consistent inbound leads.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="cta-primary">
+              <span>Book a free consultation</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#services" class="cta-secondary">View services</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <div class="trust-icon">✓</div>
+              <span>Clear process from day one</span>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">✓</div>
+              <span>Fast turnaround</span>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">✓</div>
+              <span>Transparent pricing</span>
+            </div>
+          </div>
         </div>
 
-      </div>
-      
-
+        <div class="hero-image-container">
+          <div class="hero-image-card">
+            <img
+              src="pictures/Hero-image-digitalgig _compressed.webp"
+              alt="Digital Gig team presenting a modern website layout"
+              width="1280"
+              height="720"
+              loading="eager"
+              fetchpriority="high"
+            />
+            <div class="hero-proof">
+              <p class="proof-title">Trusted by service businesses</p>
+              <ul class="proof-list">
+                <li><strong>SEO-ready structure</strong> from launch</li>
+                <li><strong>Mobile-first design</strong> optimized for speed</li>
+                <li><strong>Conversion-focused layout</strong> with clear CTAs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     <div class="hero-image-container">
       <div class="hero-image">
@@ -195,192 +205,197 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
   
   
 </section>
-
     <!-- About Us Section -->
     <section class="about-section" id="about">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+            <!-- Left Column: Content -->
       <!-- Left Column: Content -->
       <div class="about-content">
         <!-- Headline -->
         <h1 class="about-headline">
-          A Web Agency, Focused on <span class="highlight">You</span>
+          A strategic web partner focused on <span class="highlight">your growth</span>
         </h1>
 
         <!-- Intro Paragraph (Lead) -->
         <p class="about-intro">
-          We work with you from start to finish.
-          <strong>No middlemen. No hidden costs.</strong> Just personal service
-          and a website built for your business goals.
+          We work directly with business owners from discovery to launch.
+          <strong>No middlemen and no hidden costs</strong>—just clear communication,
+          practical advice, and execution aligned to your goals.
         </p>
 
         <!-- Body Paragraph -->
         <p class="about-body">
-          With a mix of
-          <strong>web development, design, SEO, and hosting,</strong> we deliver
-          websites that not only look great but also perform—whether you're a
-          <strong>lawyer looking for credibility</strong>, a
-          <strong>doctor needing patient trust</strong>, an
-          <strong>accountant wanting more client inquiries</strong>, or a
-          business looking for more customers.
+           Combining <strong>web development, design, SEO, and hosting</strong>,
+          we build websites that strengthen trust and generate consistent enquiries
+          for service businesses.
         </p>
+          <ul class="about-points">
+            <li>Strategy-first process with clear milestones</li>
+            <li>Copy and layout built to guide visitors to take action</li>
+            <li>Fast, mobile-friendly pages that support local SEO visibility</li>
+          </ul>
+
 
         <!--Trust Stats -->
          <div class="trust-stats">
           <div class="stat-item">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Customer Centric</div>
+            <div class="stat-label">Client-focused delivery</div>
           </div>
           <div class="stat-item">
             <div class="stat-number">24/7</div>
-            <div class="stat-label">Support Available</div>
+            <div class="stat-label">Ongoing support</div>
           </div>
           <div class="stat-item">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Satisfaction Focus</div>
+            <div class="stat-label">Quality commitment</div>
           </div>
         </div>
 
         <!-- CTA Buttons -->
         <div class="about-cta">
           <a href="#contact" class="cta-button">
-            Get Your Free Quote
+            Book a free strategy call
           </a>
-          <a href="tel:0731897548" class="cta-secondary"> </a>
+          <a href="#services" class="cta-secondary">View our services</a>
         </div>
       </div>
 
       <!-- Right Column: Image -->
       <div class="about-image">
         <img
-          src="pictures/about-us.jpg"
+          src="pictures/about-us_compressed.webp"
           alt="The Digital Gig team collaborating on web projects"
+          width="1200"
+          height="801"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </section>
     <!-- Features Section -->
     <section class="features" id="features">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+            <div class="container">
       <div class="container">
         <div class="section-title">
           <h2>Our Features</h2>
+          <p class="features-subtitle">
+            A polished foundation designed to make your business look credible,
+            load fast, and convert more visitors into enquiries.
+          </p>
         </div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">💻</div>
-            <h3>Pixel-Perfect Design</h3>
-            <p>
-              Every element is meticulously crafted to match your design
-              specifications exactly.
+          <div class="features-grid features-grid--professional">
+          <article class="feature-card feature-card--professional">
+            <div class="feature-icon" aria-hidden="true">UX</div>
+            <p class="feature-tag">Brand credibility</p>
+            <h3>Premium Visual Design</h3>
+             <p> Clean, modern layouts that communicate trust from the first
+              impression and align with your brand standards.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>Fully Responsive</h3>
+            <ul class="feature-points">
+              <li>Professional typography system</li>
+              <li>Clear visual hierarchy and CTA flow</li>
+            </ul>
+          </article>
+          <article class="feature-card feature-card--professional">
+            <div class="feature-icon" aria-hidden="true">RWD</div>
+              <p class="feature-tag">User experience</p>
+              <h3>Responsive Across All Devices</h3>
+              <p>  
+              Every page is optimized for desktop, tablet, and mobile so your
+              visitors get a consistent experience anywhere.
+              </p>
+                <ul class="feature-points">
+                  <li>Mobile-first layout and spacing</li>
+                  <li>Touch-friendly navigation and buttons</li>
+                </ul>
+            </div>
+          
+          </article>
+          <article class="feature-card feature-card--professional">
+            <div class="feature-icon" aria-hidden="true">SPD</div>
+            <p class="feature-tag">Performance</p>
+            <h3>Fast, Stable Performance</h3>
             <p>
-              Your website will look great on any device, from desktops to
-              smartphones.
+               Optimized assets and streamlined code keep load times low and
+              help convert more visitors into qualified leads.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Lightning Fast</h3>
-            <p>
-              Optimized code ensures your website loads quickly and performs
-              smoothly.
-            </p>
-          </div>
+            <ul class="feature-points">
+              <li>Lean front-end implementation</li>
+              <li>Performance-focused page structure</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Services -->
     <section class="service" id="services">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+            <div class="container">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title service-title">
           <h2>Our Services</h2>
+           <p class="services-subtitle">
+            End-to-end website services focused on trust, visibility, and lead generation.
+          </p>
         </div>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🖥</div>
-            <h3>Web Development</h3>
+        <div class="features-grid services-grid">
+          <article class="feature-card service-card">
+            <div class="feature-icon" aria-hidden="true">WEB</div>
+            <h3>Custom Web Development</h3>     
             <p>
-              Custom-built websites that are fast, secure, and mobile-friendly.
-              Perfect for service-based businesses that need to build trust and
-              win clients.
+              High-performance websites tailored to your business, built to convert visitors into enquiries.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📲</div>
+          <ul class="service-points">
+              <li>Mobile-first development</li>
+              <li>Clean, scalable codebase</li>
+            </ul>
+          </article>
+          <article class="feature-card service-card">
+            <div class="feature-icon" aria-hidden="true">UX</div>
             <h3>UI/UX Design</h3>
             <p>
-              Clean, modern, and user-focused designs that guide visitors to
-              take action—whether that’s booking a consultation, making a call,
-              or scheduling an appointment
+              Clear, modern interfaces that make it easy for prospects to understand your offer and take action.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⌨</div>
-            <h3>SEO (Search Engine Optimization)</h3>
+          <ul class="service-points">
+              <li>Conversion-focused page structure</li>
+              <li>Consistent visual branding</li>
+            </ul>
+          </article>
+          <article class="feature-card service-card">
+            <div class="feature-icon" aria-hidden="true">SEO</div>
+            <h3>Local SEO</h3>
             <p>
-              Local SEO strategies to help your business rank on Google. Ideal
-              for professionals like lawyers, doctors, and accountants who need
-              to be found by clients in their city.
+              Practical SEO implementation to improve search visibility and attract qualified local traffic.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🛠</div>
-            <h3>Web Hosting & Maintenance</h3>
+         <ul class="service-points">
+              <li>On-page optimization essentials</li>
+              <li>Local search performance focus</li>
+            </ul>
+          </article>
+          <article class="feature-card service-card">
+            <div class="feature-icon" aria-hidden="true">CARE</div>
+            <h3>Hosting & Ongoing Maintenance</h3>
             <p>
-              Worry-free hosting and support to keep your site secure, updated,
-              and always running smoothly.
+              Reliable hosting and proactive support to keep your site secure, fast, and up to date.
             </p>
-          </div>
+            <ul class="service-points">
+              <li>Security and uptime monitoring</li>
+              <li>Regular updates and support</li>
+            </ul>
+          </article>          
         </div>
       </div>
     </section>
 
     <!-- Portfolio -->
     <section class="portfolio-section">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+        
   
   <!-- Section Header -->
   <div class="portfolio-header">
     <h2 class="portfolio-title">Our Work</h2>
     <p class="portfolio-subtitle">
-      Real websites. Real results. See how we've helped businesses like yours grow.
+      Recent website projects built to improve credibility, strengthen local visibility, and drive qualified enquiries.
     </p>
   </div>
   
@@ -388,12 +403,12 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
   <div class="portfolio-grid">
     
     <!-- Project Card 1 -->
-    <div class="portfolio-card">
+    <article class="portfolio-card">
       <div class="portfolio-image">
-        <img src="pictures/quill website screenshot.png" alt="Quill Demo Website Preview">
+        <img src="pictures/quill website screenshot_compressed.webp" alt="Quill Demo Website Preview" width="1323" height="600" loading="lazy" decoding="async">
         <div class="portfolio-overlay">
-          <a href="https://riazmorgan.github.io/Quill-Project/" class="view-project-btn" target="_blank">
-            View Project →
+           <a href="https://riazmorgan.github.io/Quill-Project/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
           </a>
         </div>
       </div>
@@ -401,24 +416,23 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         <span class="portfolio-category">Professional Services</span>
         <h3 class="portfolio-name">Quill Demo</h3>
         <p class="portfolio-description">
-          A clean, modern website showcasing professional writing services with clear calls-to-action.
+          A clean, conversion-focused website that positions the brand professionally and guides visitors toward enquiries.
         </p>
         <div class="portfolio-tags">
           <span class="tag">Design</span>
-          <span class="tag">SEO</span>
+          <span class="tag">SEO-ready</span>
           <span class="tag">Copywriting</span>
         </div>
       </div>
-    </div>
+    </article>
     
     <!-- Project Card 2 -->
-    <div class="portfolio-card">
+    <article class="portfolio-card">
       <div class="portfolio-image">
-        <img src="pictures/doctor site screenshot.png" alt="Doctor Website">
+        <img src="pictures/doctor site screenshot_compressed.webp" alt="Doctor Website" width="1501" height="827" loading="lazy" decoding="async">
         <div class="portfolio-overlay">
-          <a href="https://riazmorgan.github.io/doc-demo/
-" class="view-project-btn" target="_blank">
-            View Project →
+    <a href="https://riazmorgan.github.io/doc-demo/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
           </a>
         </div>
       </div>
@@ -426,22 +440,22 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         <span class="portfolio-category">Healthcare</span>
         <h3 class="portfolio-name">Doctor Site Demo</h3>
         <p class="portfolio-description">
-          Professional doctor website designed to build credibility and convert consultations into clients.
+          A professional medical website designed to build patient trust and increase consultation requests
         </p>
         <div class="portfolio-tags">
           <span class="tag">Medical</span>
-          <span class="tag">Mobile-First</span>
+          <span class="tag">Mobile-first</span>
         </div>
       </div>
-    </div> 
+    </article> 
     
     <!-- Project Card 3 -->
-    <div class="portfolio-card" id="portfolio">
+    <article class="portfolio-card" id="portfolio">
       <div class="portfolio-image">
-        <img src="pictures/lawyer site screenshot.png" alt="Lawyer Site Demo Website Preview">
+        <img src="pictures/lawyer site screenshot_compressed.webp" alt="Lawyer Site Demo Website Preview" width="1303" height="527" loading="lazy" decoding="async">
         <div class="portfolio-overlay">
-          <a href="https://portfolio1.digitalgig.co.za/" class="view-project-btn" target="_blank">
-            View Project →
+          <a href="https://portfolio1.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
           </a>
         </div>
       </div>
@@ -453,19 +467,19 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         </p>
         <div class="portfolio-tags">
           <span class="tag">Legal</span>
-          <span class="tag">Trust Building</span>
-          <span class="tag">Lead Gen</span>
+          <span class="tag">Trust building</span>
+          <span class="tag">Lead gen</span>
         </div>
       </div>
-    </div>
+    </article>
     
     <!-- Project Card 4 -->
-    <div class="portfolio-card">
+    <article class="portfolio-card">
       <div class="portfolio-image">
-        <img src="pictures/dentist site screenshot.png" alt="Dentist Site Demo Website Preview">
+        <img src="pictures/dentist site screenshot_compressed.webp" alt="Dentist Site Demo Website Preview" width="1344" height="579" loading="lazy" decoding="async">
         <div class="portfolio-overlay">
-          <a href="https://portfolio2.digitalgig.co.za/" class="view-project-btn" target="_blank">
-            View Project →
+          <a href="https://portfolio2.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
           </a>
         </div>
       </div>
@@ -473,119 +487,115 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         <span class="portfolio-category">Healthcare</span>
         <h3 class="portfolio-name">Dentist Site Demo</h3>
         <p class="portfolio-description">
-          Patient-focused dental practice website with online booking and trust-building testimonials.
+          A polished dental practice website that highlights services clearly and supports higher booking intent.
         </p>
+        <ul class="portfolio-meta">
+          <li>Service clarity and social proof</li>
+          <li>Local SEO-oriented page setup</li>
+        </ul>
         <div class="portfolio-tags">
           <span class="tag">Healthcare</span>
-          <span class="tag">Booking System</span>
+          <span class="tag">Booking flow</span>
           <span class="tag">Local SEO</span>
         </div>
       </div>
-    </div>
+    </article>
     
   </div>
   
-  <!-- Optional: View All CTA -->
-  <!-- <div class="portfolio-cta">
-    <p class="cta-text">Ready to see your business online?</p>
-    <a href="mailto:info@thedigitalgig.co.za" class="cta-button">
-      Get Your Free Quote
-    </a>
-  </div> -->
+
   
 </section>
-<section class="service" id="services">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+<section class="service pricing-section" id="pricing">
+            <div class="container">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title pricing-title">
           <h2>Our Pricing</h2>
+          <p class="pricing-subtitle">Simple package options designed for growing service businesses.</p>
         </div>
-        <div class="features-grid">
-          
-          <div class="feature-card">
-            <div>R6000</div>
+        <div class="features-grid pricing-grid">
+          <article class="feature-card pricing-card">
+            <p class="plan-label">Website package</p>
             <h3>The Essential</h3>
-            <ul>
-              <li>5-page website</li>
-              <li>basic on-page SEO</li>
-              <li>1hr training</li>
+           <p class="plan-price">R6 000 <span>once-off</span></p>
+            <ul class="pricing-points">
+              <li>5-page professional website</li>
+              <li>Basic on-page SEO setup</li>
+              <li>1-hour handover training</li>
               <li>1 month post-launch support</li>
               
             </ul>
-          </div>
-          <div class="feature-card">
-            <div>R14 999</div>
+           </article>
+
+          <article class="feature-card pricing-card pricing-card--featured">
+            <p class="plan-label">Most popular</p>
             <h3>The Professional</h3>
             <ul>
-              <li>7-page website</li>
-              <li>Blog Setup</li>
-              <li>Google My Business setup</li>
+              <p class="plan-price">R14 999 <span>once-off</span></p>
+            <ul class="pricing-points">
+              <li>7-page conversion-focused website</li>
+              <li>Blog setup with starter structure</li>
+              <li>Google Business Profile setup</li>
               <li>1 month post-launch support</li>
               
             </ul>
-          </div>
-          <div class="feature-card">
-            <div>R20 000</div>
+           </article>
+
+          <article class="feature-card pricing-card">
+            <p class="plan-label">Advanced growth</p>
             <h3>The Complete</h3>
-            <ul>
-              <li>10-page website</li>
-              <li>1 month post-launch support</li>
-              <li>e-commerce/payment setup</li>
+            <p class="plan-price">R20 000 <span>once-off</span></p>
+            <ul class="pricing-points">
+              <li>10-page custom website</li>
+              <li>E-commerce or payment setup</li>
               <li>Booking system integration</li>
+              <li>1 month post-launch support</li>
               
             </ul>
-          </div>
+          </article>
         </div>
-        <div class="section-title">
-          <h2>Maintenance</h2>
+       <div class="section-title pricing-title pricing-title--secondary">
+          <h2>Maintenance Plans</h2>
+          <p class="pricing-subtitle">Ongoing technical support to keep your site secure, fast, and improving.</p>
         </div>
-            
-        <div class="features-grid">
           
-          <div class="feature-card">
-            <div>R299</div>
+        <div class="features-grid pricing-grid">
+          <article class="feature-card pricing-card">
+            <p class="plan-label">Monthly care</p>  
+        
             <h3>Host & Maintain</h3>
-            <ul>
-              <li>Hosting</li>
-              <li>SSL</li>
-              <li>Weekly Backups</li>
-              <li>Security Monitoring</li>
-              <li>Software updates</li>
+            <p class="plan-price">R299 <span>/ month</span></p>
+            <ul class="pricing-points">
+              <li>Managed hosting and SSL</li>
+              <li>Weekly backups</li>
+              <li>Security monitoring</li>
+              <li>Core software updates</li>
               
             </ul>
-          </div>
-          <div class="feature-card">
-            <div>R799</div>
+           </article>
+
+          <article class="feature-card pricing-card">
+            <p class="plan-label">Performance care</p>
             <h3>Host, Maintain & Grow</h3>
-            <ul>
-              <li>Everything in previous tier</li>
-              <li>Monthly performance report</li>
-              <li>Content updates (1hr)</li>
-              <li>SEO</li>
-              <li>Keyword tracking</li>
-              
+              <p class="plan-price">R799 <span>/ month</span></p>
+            <ul class="pricing-points">
+              <li>Everything in Host & Maintain</li>
+              <li>Monthly performance reporting</li>
+              <li>Content updates (up to 1 hour)</li>
+              <li>SEO and keyword tracking</li>
             </ul>
-          </div>
-          <div class="feature-card">
-            <div>R1 499</div>
+          <article class="feature-card pricing-card">
+            <p class="plan-label">Full growth support</p>
             <h3>Full Management</h3>
-            <ul>
+            <p class="plan-price">R1 499 <span>/ month</span></p>
+            <ul class="pricing-points">
               <li>Everything in previous tier</li>
-              <li>1 blog post/month</li>
-              <li>Google Ads(ad spend seperate)</li>
-              <li>Facebook Ads(ad spend seperate)</li>
-              <li>Monthly Strategy Call</li>
-              
+              <li>1 blog post per month</li>
+              <li>Google Ads management (ad spend separate)</li>
+              <li>Facebook Ads management (ad spend separate)</li>
+              <li>Monthly strategy call</li>
             </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -594,30 +604,31 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+        
   
   <div class="contact-container">
     
     <!-- Left Column: Info & Trust Signals -->
     <div class="contact-info">
       
+      <p class="contact-eyebrow">Get in touch</p>
+
       <!-- Headline -->
       <h2 class="contact-headline">
-        Let's Talk About <span class="highlight">Your Project</span>
+        Let’s plan a website that <span class="highlight">wins more clients</span>
       </h2>
       
       <!-- Subheadline -->
       <p class="contact-subheadline">
-        We're ready to bring your ideas to life with <strong>clean, efficient code</strong> and <strong>pixel-perfect design.</strong>
+        Share your goals and we’ll recommend the right approach, timeline, and next steps.
+        <strong>Clear communication, practical strategy, and reliable delivery.</strong>
       </p>
+
+        <ul class="contact-highlights">
+        <li>Fast response within one business day</li>
+        <li>Straightforward recommendations for your stage of growth</li>
+        <li>No-obligation consultation to discuss your project</li>
+      </ul>
       
       <!-- Contact Methods -->
       <div class="contact-methods">
@@ -631,7 +642,7 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
             </svg>
           </div>
           <div class="method-details">
-            <span class="method-label">Email Us</span>
+            <span class="method-label">Email</span>
             <a href="mailto:info@digitalgig.co.za" class="method-value">
               info@digitalgig.co.za
             </a>
@@ -647,6 +658,7 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
           </div>
           <div class="method-details">
             <span class="method-label">Call or WhatsApp</span>
+            <span class="method-note">Mon–Fri, 9:00–17:00</span>
             <a href="tel:0731897548" class="method-value">
               073 189 7548
             </a>
@@ -676,7 +688,9 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
     <!-- Right Column: Contact Form -->
     <div class="contact-form-wrapper">
 <form id="contactForm" class="contact-form-dg">
-<h2>Send Us a Message</h2>
+<p class="form-kicker">Project enquiry</p>
+<h2>Send us a message</h2>
+<p class="form-intro">Tell us a bit about your business and what you need. We will get back to you shortly.</p>
 
 
 <!-- Web3Forms Access Key -->
@@ -718,15 +732,7 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
 
     <!-- Footer -->
     <footer class="footer-section">
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
+        
   
   <!-- Main Footer Content -->
   <div class="footer-main">
@@ -739,21 +745,13 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
           <div class="logo-underline"></div>
         </div>
         <p class="footer-tagline">
-          Creating beautiful, functional websites with attention to detail and precision.
+          We build professional websites for service businesses that need trust, clarity, and consistent enquiries.
         </p>
         
         <!-- Quick Contact -->
         <div class="footer-contact">
-          <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
-          <a href="mailto:info@digitalgig.co.za" class="footer-contact-link">
+                    <a href="mailto:info@digitalgig.co.za" class="footer-contact-link">
+              <a href="mailto:info@digitalgig.co.za" class="footer-contact-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
@@ -770,16 +768,8 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         
         <!-- CTA Button -->
         <a href="#contact" class="footer-cta-btn">
-          <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
-          Get Your Free Quote →
+                    Book a free strategy call →
+              Book a free strategy call →
         </a>
       </div>
       
@@ -812,12 +802,12 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
       <div class="ml-embedded" data-form="yabhqD">
         <h4 class="footer-heading">Stay Updated</h4>
         <p class="newsletter-text">
-          Get tips on growing your online presence.
+          Actionable website, SEO, and lead-generation insights for service businesses.
         </p>
         <form class="newsletter-form" id="newsletterForm">
-          <input 
-            type="email" 
-            class="newsletter-input" 
+           <input
+            type="email"
+            class="newsletter-input"
             placeholder="Enter your email"
             required
           >
@@ -827,32 +817,24 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
         </form>
       </div>  
         <!-- Social Links -->
-         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-37WV5VKE7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-37WV5VKE7L');
-</script>
-        <div class="footer-social">
-          <a href="https://facebook.com/thedigitalgig1/" class="social-icon facebook" aria-label="Facebook" target="_blank">
+                 <div class="footer-social">
+           <div class="footer-social">
+          <a href="https://facebook.com/thedigitalgig1/" class="social-icon facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
             </svg>
           </a>
-          <a href="https://instagram.com/_thedigitalgig" class="social-icon instagram" aria-label="Instagram" target="_blank">
+       <a href="https://instagram.com/_thedigitalgig" class="social-icon instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/108628402" class="social-icon linkedin" aria-label="LinkedIn" target="_blank">
+          <a href="https://www.linkedin.com/company/108628402" class="social-icon linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
-          <a href="https://github.com/RiazMorgan" class="social-icon github" aria-label="GitHub" target="_blank">
+          <a href="https://github.com/RiazMorgan" class="social-icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>
@@ -864,12 +846,12 @@ src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
   </div>
   
   <!-- Footer Bottom: Copyright + Legal -->
-<footer>
+<div class="footer-bottom-wrap">
   <div class="footer-bottom">
     <div class="footer-container">
       <div class="footer-bottom-content">
         <p class="copyright">
-          © 2025 The Digital Gig. All rights reserved.
+          © 2026 The Digital Gig. All rights reserved.
         </p>
         <div class="footer-legal">
           <a href="pictures/PRIVACY POLICY FOR DIGITAL GIG PTY LTD.docx">Privacy Policy</a>
