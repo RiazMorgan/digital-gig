@@ -929,6 +929,113 @@ nav li {
 
 /* Scroll Animation Classes */
 
+/* Features Section */
+.features {
+  padding: 6.25rem 0;
+  background: radial-gradient(circle at 10% 10%, #f4f9ff 0%, #ffffff 45%);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+
+.features-subtitle {
+  max-width: 42rem;
+  margin: 1.1rem auto 0;
+  color: #5f6b7a;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: var(--color-dark);
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -0.9375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: var(--color-accent);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 1.5rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 0;
+}
+
+.feature-card {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #e4edf7;
+  border-radius: 16px;
+  padding: 2rem 1.6rem;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  box-shadow: 0 8px 20px rgba(18, 38, 63, 0.06);
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(18, 38, 63, 0.13);
+  border-color: #bfdcff;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db 0%, #66b6ee 100%);
+}
+
+.feature-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 1.1rem;
+  background: linear-gradient(145deg, #e5f2ff 0%, #f4f9ff 100%);
+  color: #1f6ea9;
+  border: 1px solid #d7e9fb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.55rem;
+}
+
+.feature-card h3 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.feature-card p {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #5a6574;
+  font-weight: 500;
+}
+
+.features-grid--professional {
+  align-items: stretch;
+}
+
 .feature-card--professional {
   display: flex;
   flex-direction: column;
