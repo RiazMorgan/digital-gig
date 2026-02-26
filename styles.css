@@ -2580,11 +2580,20 @@ a.method-value:hover {
   .hero-content {
     grid-column: 1;
     order: 1;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-image-container {
     grid-column: 1;
     order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-image-card,
+  .hero-image-container img {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
