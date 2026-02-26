@@ -1,0 +1,32 @@
+/* Critical promo hero styles */
+.promo-hero {
+  position: relative;
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, #0d67b5 0%, #06457e 100%);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.promo-container { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+.promo-badge {
+  background-color: var(--color-highlight, #f9c642);
+  color: var(--color-dark, #0c0c0f);
+  padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 800;
+  text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1.5rem;
+}
+.promo-kicker { letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: #cfe6ff; margin-bottom: 0.75rem; font-size: 0.9rem; }
+.promo-headline { color: white; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.15; margin-bottom: 1rem; max-width: 12ch; }
+.promo-subheadline { color: #deecfb; font-size: 1.1rem; line-height: 1.6; max-width: 640px; margin-bottom: 1.5rem; }
+.promo-price-summary { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1.25rem; border-radius: 999px; background: rgba(255,255,255,.12); margin-bottom: 1.5rem; }
+.promo-highlights { list-style: none; padding: 0; margin: 0 0 2rem; width: 100%; max-width: 640px; text-align: left; display: grid; gap: 0.65rem; }
+.promo-highlights li { position: relative; padding: 0.75rem 0.9rem 0.75rem 2.2rem; border-radius: 10px; background: rgba(7,49,87,0.42); }
+.promo-highlights li::before { content: "✓"; position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--color-highlight,#f9c642); font-weight: 800; }
+.scarcity-box { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); padding: 1.5rem; border-radius: 12px; margin-bottom: 2.5rem; width: 100%; max-width: 450px; }
+.progress-bar { width: 100%; height: 12px; background: rgba(0,0,0,.3); border-radius: 6px; overflow: hidden; margin: 10px 0; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #f9c642, #ff9800); }
+.pulse-animation { animation: pulse 2s infinite; }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
