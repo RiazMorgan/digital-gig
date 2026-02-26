@@ -499,7 +499,19 @@ nav li {
 }
 
 .hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: min(1200px, 100%);
   align-items: center;
+}
+
+.hero-content {
+  grid-column: 1;
+}
+
+.hero-image-container {
+  grid-column: 2;
 }
 
 .hero-headline {
