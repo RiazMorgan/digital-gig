@@ -1,6 +1,7 @@
 const contactForm = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
 const statusMessage = document.getElementById("statusMessage");
+const btnText = document.getElementById("btnText");
 
 contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -8,7 +9,7 @@ contactForm.addEventListener("submit", async (e) => {
   const formData = new FormData(contactForm);
 
   submitBtn.disabled = true;
-  document.getElementById("btnText").textContent = "Sending...";
+  btnText.textContent = "Sending...";
   statusMessage.style.display = "block";
   statusMessage.textContent = "Sending...";
 
@@ -32,6 +33,7 @@ contactForm.addEventListener("submit", async (e) => {
           window.location.href = redirectUrl;
         }, 2000); // Wait 2 seconds before redirecting
       }
+      c;
     } else {
       statusMessage.textContent = "Failed to send message. Try again.";
       statusMessage.className = "message error";
@@ -42,7 +44,9 @@ contactForm.addEventListener("submit", async (e) => {
     statusMessage.className = "message error";
   } finally {
     submitBtn.disabled = false;
-    document.getElementById("btnText").textContent = "Send Message";
-    setTimeout(() => (statusMessage.style.display = "none"), 7000);
+    btnText.textContent = "Send Message";
+    setTimeout(() => {
+      window.location.href = "#contact";
+    }, 2000);
   }
 });
