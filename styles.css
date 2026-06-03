@@ -24,6 +24,11 @@
   --font-body: "Overpass", sans-serif;
 }
 
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
+}
+
 body {
   font-family: var(--font-body);
   font-size: 1.5rem;
@@ -226,12 +231,12 @@ nav li {
   padding: 1.25rem 0; */
   background: rgba(12, 12, 15, 0.92);
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(12px);
+  background: rgba(12, 12, 15, 0.92);
   padding: 0.9rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .header-content {
@@ -540,7 +545,7 @@ nav li {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(6px);
 }
 
@@ -1015,7 +1020,7 @@ nav li {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .about-image img {

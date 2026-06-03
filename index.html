@@ -8,15 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:..." as="style">
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Overpass:..." as="style">
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    /> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Overpass:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,32 +31,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
     
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1930092');
-</script>
-<!-- End MailerLite Universal -->
- <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '442815601559095');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
   </head>
   <body>
     <!-- Header & Navigation -->
@@ -155,6 +128,7 @@ Websites for <strong>law firms, doctors, and service businesses</strong> that ne
   src="pictures/Hero Image -2.webp"
   width="1200"
   height="700"
+  fetchpriority="high"
   loading="eager"
   decoding="async"
   alt="Digital Gig team presenting a modern website layout"
@@ -171,6 +145,150 @@ Websites for <strong>law firms, doctors, and service businesses</strong> that ne
         </div>
       </div>
 </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio-section">
+   
+  <!-- Section Header -->
+  <div class="portfolio-header">
+    <h2 class="portfolio-title">Our Work</h2>
+    <p class="portfolio-subtitle">
+      Recent website projects built to improve credibility, strengthen local visibility, and drive qualified enquiries.
+    </p>
+  </div>
+  
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    
+    <!-- Project Card 1 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img 
+  src="pictures/Cream &craft screenshot (1).webp"
+  width="1200"
+  height="900"
+  loading="lazy"
+  decoding="async"
+  alt="Cream & Craft Website Preview"
+/>
+        <div class="portfolio-overlay">
+           <a href="https://riazmorgan.github.io/ice-cream-vibecode/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-category">Food Services</span>
+        <h3 class="portfolio-name">Cream & Craft Demo</h3>
+        <p class="portfolio-description">
+          Built to showcase handcrafted flavours, position the brand professionally, and turn visitors into loyal customers..
+        </p>
+        <div class="portfolio-tags">
+          <span class="tag">Conversion</span>
+          <span class="tag">Clean UI</span>
+          <span class="tag">SEO-ready</span>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Project Card 2 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img 
+  src="pictures/Elevated Essentials (1).webp"
+  width="1200"
+  height="900"
+  loading="lazy"
+  decoding="async"
+  alt="Doctor Website"
+/>
+        <div class="portfolio-overlay">
+    <a href="https://riazmorgan.github.io/premium-cannabis/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-category">Healthcare</span>
+        <h3 class="portfolio-name">Marijuana Dispensary</h3>
+        <p class="portfolio-description">
+          Designed to build customer trust, elevate the brand experience, and increase orders.
+        </p>
+        <div class="portfolio-tags">
+          <span class="tag">Trust</span>
+          <span class="tag">Mobile-first</span>
+          <span class="tag">Clarity</span>
+        </div>
+      </div>
+    </article> 
+    
+    <!-- Project Card 3 -->
+    <article class="portfolio-card" id="portfolio">
+      <div class="portfolio-image">
+      <img 
+  src="pictures/lawyer site screenshot_compressed.webp"
+  width="1200"
+  height="900"
+  loading="lazy"
+  decoding="async"
+  alt="Lawyer Site Demo Website Preview"
+/>
+        <div class="portfolio-overlay">
+          <a href="https://portfolio1.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-category">Legal Services</span>
+        <h3 class="portfolio-name">Law Firm</h3>
+        <p class="portfolio-description">
+          Structured to convert consultations into clients.
+        </p>
+        <div class="portfolio-tags">
+          <span class="tag">Credibility</span>
+          <span class="tag">Lead gen</span>
+          <span class="tag">Authority</span>
+        </div>
+      </div>
+    </article>
+    
+    <!-- Project Card 4 -->
+    <article class="portfolio-card">
+      <div class="portfolio-image">
+        <img 
+  src="pictures/dentist site screenshot_compressed.webp"
+  width="1200"
+  height="900"
+  loading="lazy"
+  decoding="async"
+  alt="Dentist Site Demo Website Preview"
+/>
+        <div class="portfolio-overlay">
+          <a href="https://portfolio2.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
+            View live site
+          </a>
+        </div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-category">Healthcare</span>
+        <h3 class="portfolio-name">Dental Practice</h3>
+        <p class="portfolio-description">
+          Clear service structure designed to increase bookings.
+        </p>
+        <ul class="portfolio-meta">
+          <li>Service clarity and social proof</li>
+          <li>Local SEO-oriented page setup</li>
+        </ul>
+        <div class="portfolio-tags">
+          <span class="tag">Bookings</span>
+          <span class="tag">UX</span>
+          <span class="tag">Local SEO</span>
+        </div>
+      </div>
+    </article>
+    
+  </div>
     <!-- About Us Section -->
     <section class="about-section" id="about">
       
@@ -344,149 +462,7 @@ Websites for <strong>law firms, doctors, and service businesses</strong> that ne
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio-section">
-   
-  <!-- Section Header -->
-  <div class="portfolio-header">
-    <h2 class="portfolio-title">Our Work</h2>
-    <p class="portfolio-subtitle">
-      Recent website projects built to improve credibility, strengthen local visibility, and drive qualified enquiries.
-    </p>
-  </div>
-  
-  <!-- Portfolio Grid -->
-  <div class="portfolio-grid">
-    
-    <!-- Project Card 1 -->
-    <article class="portfolio-card">
-      <div class="portfolio-image">
-        <img 
-  src="pictures/Cream &craft screenshot (1).webp"
-  width="1200"
-  height="900"
-  loading="lazy"
-  decoding="async"
-  alt="Cream & Craft Website Preview"
-/>
-        <div class="portfolio-overlay">
-           <a href="https://riazmorgan.github.io/ice-cream-vibecode/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
-            View live site
-          </a>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="portfolio-category">Food Services</span>
-        <h3 class="portfolio-name">Cream & Craft Demo</h3>
-        <p class="portfolio-description">
-          Built to showcase handcrafted flavours, position the brand professionally, and turn visitors into loyal customers..
-        </p>
-        <div class="portfolio-tags">
-          <span class="tag">Conversion</span>
-          <span class="tag">Clean UI</span>
-          <span class="tag">SEO-ready</span>
-        </div>
-      </div>
-    </article>
-    
-    <!-- Project Card 2 -->
-    <article class="portfolio-card">
-      <div class="portfolio-image">
-        <img 
-  src="pictures/Elevated Essentials (1).webp"
-  width="1200"
-  height="900"
-  loading="lazy"
-  decoding="async"
-  alt="Doctor Website"
-/>
-        <div class="portfolio-overlay">
-    <a href="https://riazmorgan.github.io/premium-cannabis/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
-            View live site
-          </a>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="portfolio-category">Healthcare</span>
-        <h3 class="portfolio-name">Marijuana Dispensary</h3>
-        <p class="portfolio-description">
-          Designed to build customer trust, elevate the brand experience, and increase orders.
-        </p>
-        <div class="portfolio-tags">
-          <span class="tag">Trust</span>
-          <span class="tag">Mobile-first</span>
-          <span class="tag">Clarity</span>
-        </div>
-      </div>
-    </article> 
-    
-    <!-- Project Card 3 -->
-    <article class="portfolio-card" id="portfolio">
-      <div class="portfolio-image">
-      <img 
-  src="pictures/lawyer site screenshot_compressed.webp"
-  width="1200"
-  height="900"
-  loading="lazy"
-  decoding="async"
-  alt="Lawyer Site Demo Website Preview"
-/>
-        <div class="portfolio-overlay">
-          <a href="https://portfolio1.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
-            View live site
-          </a>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="portfolio-category">Legal Services</span>
-        <h3 class="portfolio-name">Law Firm</h3>
-        <p class="portfolio-description">
-          Structured to convert consultations into clients.
-        </p>
-        <div class="portfolio-tags">
-          <span class="tag">Credibility</span>
-          <span class="tag">Lead gen</span>
-          <span class="tag">Authority</span>
-        </div>
-      </div>
-    </article>
-    
-    <!-- Project Card 4 -->
-    <article class="portfolio-card">
-      <div class="portfolio-image">
-        <img 
-  src="pictures/dentist site screenshot_compressed.webp"
-  width="1200"
-  height="900"
-  loading="lazy"
-  decoding="async"
-  alt="Dentist Site Demo Website Preview"
-/>
-        <div class="portfolio-overlay">
-          <a href="https://portfolio2.digitalgig.co.za/" class="view-project-btn" target="_blank" rel="noopener noreferrer">
-            View live site
-          </a>
-        </div>
-      </div>
-      <div class="portfolio-info">
-        <span class="portfolio-category">Healthcare</span>
-        <h3 class="portfolio-name">Dental Practice</h3>
-        <p class="portfolio-description">
-          Clear service structure designed to increase bookings.
-        </p>
-        <ul class="portfolio-meta">
-          <li>Service clarity and social proof</li>
-          <li>Local SEO-oriented page setup</li>
-        </ul>
-        <div class="portfolio-tags">
-          <span class="tag">Bookings</span>
-          <span class="tag">UX</span>
-          <span class="tag">Local SEO</span>
-        </div>
-      </div>
-    </article>
-    
-  </div>
+
   
 
   
@@ -856,5 +832,31 @@ Websites for <strong>law firms, doctors, and service businesses</strong> that ne
 
     
 </footer>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1930092');
+</script>
+<!-- End MailerLite Universal -->
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '442815601559095');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=442815601559095&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
